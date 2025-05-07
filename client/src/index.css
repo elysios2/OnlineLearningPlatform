@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 30 100% 50%; /* #FF8000 - Naranja principal */
+  --primary-hover: 30 100% 45%; /* #E67300 - Naranja oscuro */
+  --primary-foreground: 0 0% 100%; /* Blanco para texto sobre naranja */
+  --secondary: 34 100% 50%; /* #FFA500 - Naranja secundario */
+  --secondary-hover: 34 100% 45%; /* #E69500 - Naranja secundario oscuro */
+  --secondary-foreground: 0 0% 100%; /* Blanco para texto sobre naranja */
+  --accent: 40 100% 97%; /* #FFFBF0 - Naranja muy claro para fondos */
+  --accent-foreground: 30 100% 25%; /* #803F00 - Naranja muy oscuro para texto */
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 30 100% 50%; /* Naranja para outlines */
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 30 100% 50%; /* #FF8000 - Naranja principal */
+  --primary-hover: 30 100% 45%; /* #E67300 - Naranja oscuro */
+  --primary-foreground: 0 0% 100%; /* Blanco para texto sobre naranja */
+  --secondary: 34 100% 50%; /* #FFA500 - Naranja secundario */
+  --secondary-hover: 34 100% 45%; /* #E69500 - Naranja secundario oscuro */
+  --secondary-foreground: 0 0% 100%; /* Blanco para texto sobre naranja */
+  --accent: 30 15% 15%; /* #261A14 - Naranja oscuro para fondos en modo oscuro */
+  --accent-foreground: 34 100% 70%; /* #FFCC80 - Naranja claro para texto */
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 30 100% 50%; /* Naranja para outlines */
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .font-heading {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer utilities {
+  .bg-primary-hover {
+    @apply bg-[#E67300]; /* Naranja oscuro */
+  }
+
+  .bg-secondary-hover {
+    @apply bg-[#E69500]; /* Naranja secundario oscuro */
+  }
+  
+  .bg-orange-main {
+    @apply bg-[#FF8000]; /* Naranja principal - como en tkytelecturadinamica.com */
+  }
+  
+  .text-orange-main {
+    @apply text-[#FF8000]; /* Naranja principal */
+  }
+  
+  .bg-orange-secondary {
+    @apply bg-[#FFA500]; /* Naranja secundario */
+  }
+  
+  .text-orange-secondary {
+    @apply text-[#FFA500]; /* Naranja secundario */
+  }
+  
+  .bg-orange-light {
+    @apply bg-[#FFFBF0]; /* Naranja muy claro para fondos */
+  }
+  
+  .text-orange-dark {
+    @apply text-[#803F00]; /* Naranja muy oscuro para texto */
+  }
+}

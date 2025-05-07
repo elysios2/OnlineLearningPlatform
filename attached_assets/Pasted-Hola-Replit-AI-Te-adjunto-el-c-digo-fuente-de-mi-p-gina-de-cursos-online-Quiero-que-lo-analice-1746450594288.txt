@@ -1,0 +1,31 @@
+Hola, Replit AI:
+
+Te adjunto el código fuente de mi página de cursos online. Quiero que lo analices a fondo, lo refactorices y le agregues las siguientes funcionalidades y mejoras:
+
+1. **Autenticación con Google vía Supabase**  
+   - Configura la conexión con mi proyecto de Supabase.  
+   - Añade el flujo de “Login con Google” usando la librería oficial de Supabase JS/TS.
+
+2. **Creación de cuentas para acceso a cursos gratuitos**  
+   - Implementa un formulario de registro (email + contraseña + confirmación).  
+   - Permite diferenciar usuarios “gratis” de “premium” en la tabla de usuarios de Supabase.
+
+3. **Modelo de datos: cursos y control de acceso**  
+   - Crea una tabla `courses` en Supabase con campos: `id`, `title`, `description`, `price`, `file_url` (o `encrypted_content`).  
+   - Implementa cifrado (por ejemplo, AES) de los archivos/vídeos de los cursos almacenados, de modo que sólo los usuarios con permiso (los que compraron) puedan descifrarlos y visualizarlos.
+
+4. **Mejora de la prueba de lectura**  
+   - Refactoriza la prueba actual para que mida no solo velocidad, sino también comprensión (preguntas de opción múltiple).  
+   - Añade un sistema de puntuación más avanzado, con estadísticas por usuario y sección de “recomendaciones de mejora”.
+
+5. **Estructura de página y experiencia de usuario**  
+   - Convierte la web en un portal de cursos pagos y gratuitos, totalmente responsive (puedes usar Flexbox, CSS Grid o Tailwind).  
+   - Integra llamadas a Supabase para listar cursos, mostrar detalles y gestionar compras sin necesidad de un backend propio.
+   - Sugiere e implementa al menos dos ideas más para mejorar la plataforma (por ejemplo: sistema de valoraciones, foros de discusión, pases de suscripción mensual, etc.).
+
+**Requisitos adicionales**  
+- Usa código modular y limpio (ES6+, hooks si usas React, o patrones MVC si usas Vanilla JS/jQuery).  
+- Incluye comentarios que expliquen las partes clave del código.  
+- Devuélveme la estructura de archivos actualizada y un breve README que explique cómo configurar el proyecto con Supabase.
+
+Por favor, genera los cambios directamente sobre el código adjunto y proporciona fragmentos de ejemplo y pasos de migración para el proyecto. ¡Gracias!
