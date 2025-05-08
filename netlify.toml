@@ -1,0 +1,8 @@
+[build]
+  command = "npm install && npm run build"
+  publish = "dist/public"
+
+[dev]
+  # Para netlify dev, levanta tu Vite y que proxy pase a client/
+  command = "npm run dev"
+  port    = 8888
